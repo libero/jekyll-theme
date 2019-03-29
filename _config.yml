@@ -1,4 +1,4 @@
-repository: libero/search
+repository: libero/jekyll-theme
 markdown: kramdown
 highlighter: rouge
 kramdown:

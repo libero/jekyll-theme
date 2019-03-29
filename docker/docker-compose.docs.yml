@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  docs:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.docs
+    working_dir: /srv/site
+    volumes:
+      - ..:/srv/site
+    command: "jekyll serve -H 0.0.0.0 -P 4000"
+    ports:
+      - 4000:4000
